@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/*Creación del Font - Family */
+
+@font-face {
+    font-family: Lobster;
+    src: url(Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: Anton;
+    src: url(Anton-Regular.ttf);
+}
+
+div.bloque{
+	display:inline-block;
+	width:20%;
+	
+}
+
+div[name="reparto"] {
+	position: relative;
+	bottom: 10em;
+}
+
+header h1 {
+	font-family: 'Anton', sans-serif;
+	font-size: 4em;
+	color:  #414239;
+	
+}
+
+section h2 {
+	font-family: 'Lobster', cursive;
+	font-size: 2.5em;
+	color:  #9e0947;
+}
+
+section.movie{
+	border-style: dotted;
+	border-width: 1px;
+	border-color: #d7d8cb;
+}
+
+div[name="sinopsis"] p {
+	text-align:justify;
+}
+
+div[name="sinopsis"] h3 {
+	color: #ce105c;
+	font-size: 1em;
+}
+
+div[name="reparto"] h3 {
+	color: #ce105c;
+	font-size: 1em;
+}
+
+body {
+	font-family: 'Verdana';
+}
+
+li[data-famoso="principal"] {
+	font-weight: bold;
+}
+
+li[data-famoso="secundario"] {
+	font-style: italic;
+}
+
+li {
+	list-style-image: url('https://goo.gl/6hPSSH');
+}
+
+img.imagen:hover {
+	opacity: 0.8;
+}
+
+.showOnMobile{
+	display: none;
+}
+
+.showOnTablet{
+	display: none;
+}

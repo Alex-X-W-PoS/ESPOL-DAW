@@ -5,30 +5,33 @@
     <meta charset="UTF-8">
     <meta name="descripcion" content="Sitio web con hoja de vida"/>
     <link rel="stylesheet" type="text/css" href="estilo.css"/>
+	<link rel="stylesheet" type="text/css" href="responsive.css"/>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   </head>
   <body>
     <header>
 	  <h1>Hoja de Vida</h1>
 	</header>
-	<section id="uno">
+	<section id="uno" class="col-1">
 	  <h2>Alex Roberto Ferrín Alcívar</h2>
 	  <div class="bloque">
 	    <img src="img/perfil.jpg" alt="Foto perfil" width=200>
 	  </div>
 	  <div class="bloque">
-	    <p>Ingeniería en Ciencias Computacionales</p>
-	    <p>Escuela Superior Politécnica del Litoral</p>
-	    <p>Manta - Manabí - Ecuador</p>
-	    <p>Dirección ZIP (no me la se :'v)</p>
+	    <p class="hiddenOnResponsive">Ingeniería en Ciencias Computacionales</p>
+	    <p class="hiddenOnResponsive">Escuela Superior Politécnica del Litoral</p>
+	    <p class="centrado">Manta - Manabí - Ecuador</p>
+	    <p class="centrado">Dirección ZIP (no me la se :'v)</p>
 	  </div>
 	</section>
-	<section id="dos">
+	<section id="dos" class="col-1">
 	  <h2>Datos Personales</h2>
 	  <p>Cdla. Basbasquillo Av. 4 Calle 5 - 6</p>
 	  <p>Celular: 0989004492</p>
 	</section>
-	<section id="tres">
+	<section id="tres" class="col-1">
 	  <h2>Educación</h2>
+	  <div class="col-2">
 	  <div class="bloque">
 	    <img src="img/Monumento_ESPOL.jpg" alt="ESPOL" width=300>
 	  </div>
@@ -42,7 +45,9 @@
 	      <p>Programación Orientada a Objetos - Entendimiento del paradigma Orientado a Objetos.</p>
 	    </div>
 	  </div>
+	  </div>
 	  <hr>
+	  <div class="col-2">
 	  <div class="bloque">
 	    <img src="img/unidad-educativa-manabi.jpg" alt="unidad-educativa-manabi" width=300>
 	  </div>
@@ -55,8 +60,9 @@
 	      <p>Habilidad de dibujar a lápiz y pluma en estilo anime.</p>	  
 	    </div>
       </div>
+	  </div>
 	</section>
-	<section id="cuatro">
+	<section id="cuatro" class="col-1">
 	  <h2>Habilidades Técnicas</h2>
 	  <div id="container">
 	    <div class="hab">

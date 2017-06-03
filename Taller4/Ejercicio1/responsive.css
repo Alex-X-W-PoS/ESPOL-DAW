@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+	
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+/*.col-1 {width: 90%;}
+.col-2 {width: 50%;}*/
+
+@media only screen and (max-width : 480px) {
+	.col-1 {width: 90%;}
+	.col-2 {width: 50%}
+	header h1{
+		margin-left:0%;
+	}
+	
+	body {
+    margin-left:5%;
+	}
+	
+	section#dos h2 {
+		display: none;
+	}
+	
+	section#tres h2 {
+		text-align: center;
+	}
+	
+	hr {
+		display: none;
+	}
+	
+	.col-2{
+		float: left;
+	}
+	
+	section#cuatro {
+	clear: both;
+	}
+	
+	.hiddenOnResponsive {
+		display: none;
+	}
+	
+	.centrado {
+		text-align: center;
+	}
+	
+	.bloque {
+		display: block !important;
+	}
+}
