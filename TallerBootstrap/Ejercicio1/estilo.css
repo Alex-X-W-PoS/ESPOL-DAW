@@ -1,0 +1,130 @@
+h1 {
+	text-align: center;
+}
+
+.container:not(#notBorder) {
+	
+	border-style: solid;
+	border-width: 1pt;
+	border-color: #cbccc1;
+	margin-top: 1pt;
+	margin-bottom: 1pt;
+	padding-bottom: 5pt;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.centeredText {
+	text-align: center;
+}
+
+em{
+	font-style: normal;
+}
+
+.cursivo{
+	font-style: italic;
+}
+
+p#valor{
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.hab{
+	border-radius:25px;
+	box-shadow: 5px 5px 5px;
+	background-color: #E6E6E6;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 8pt;
+}
+
+.autoMargin{
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+
+.blueBorder{
+	border-style: solid;
+	border-radius: 25px;
+	border-color: #58FAF4;
+	background-color:#58FAF4;
+}
+
+.showOnResponsive {
+	display: none !important;
+}
+
+@media only screen and (max-width : 480px) {
+	.hiddenOnResponsive {
+		display: none !important;
+	}
+	
+	.centrado {
+		text-align: center;
+	}
+	
+	.container:not(#notBorder){
+	padding-right: 5%;
+	padding-left: 5%;
+	border-radius: 15px;
+	background-color: #d4e3fc
+    }
+	
+	.notVisibleResponsive{
+		visibility: hidden;
+	}
+	
+	.autoMargin{
+		font-size: 0.7em;
+	}
+	p#valor{
+		font-size: 0.7em;
+	}
+	
+	.conComa::after{
+		content: ",";
+	}
+	
+	em{
+		font-size: 0.8em;
+	}
+	
+	h3{
+		font-size:1em;
+	}
+	#perfil{
+		position: absolute;
+		left: 20%;
+		bottom: -5000%;
+		border: 2pt solid;
+	}
+	
+	[class*="col-"] {
+	padding-right: 5%;
+	padding-left: 5%;
+	}
+	
+	.showOnResponsive {
+		display: block !important;
+	}
+	
+	#nameblock{
+		border-style: solid;
+		font-size: 1.3em;
+		position: absolute;
+		z-index: 1;
+		text-align: center;
+		background-color: white;
+		opacity: 0.5;
+		left: 18%;
+		display: block !important;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

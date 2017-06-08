@@ -1,0 +1,197 @@
+@charset "UTF-8";
+/*Creación del Font - Family */
+
+@font-face {
+    font-family: Lobster;
+    src: url(Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: Anton;
+    src: url(Anton-Regular.ttf);
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+video {
+	max-width: 100%;
+	height: auto;
+}
+
+
+div[name="reparto"] {
+	position: relative;
+	bottom: 10em;
+}
+
+h1 {
+	font-family: 'Anton', sans-serif;
+	font-size: 4em;
+	color:  #414239;
+	
+}
+
+h2 {
+	font-family: 'Lobster', cursive;
+	font-size: 2.5em;
+	color:  #9e0947;
+}
+
+.container:not(#mainTitle){
+	border-style: dotted;
+	border-width: 1px;
+	border-color: #d7d8cb;
+}
+
+p.sinopsis {
+	text-align:justify;
+}
+
+h3 {
+	color: #ce105c;
+	font-size: 1em;
+}
+
+body {
+	font-family: 'Verdana';
+}
+
+li[data-famoso="principal"] {
+	font-weight: bold;
+}
+
+li[data-famoso="secundario"] {
+	font-style: italic;
+}
+
+li {
+	list-style-image: url('https://goo.gl/6hPSSH');
+}
+
+img.imagen:hover {
+	opacity: 0.8;
+}
+
+.showOnMobile{
+	display: none;
+}
+
+.showOnTablet{
+	display: none;
+}
+
+@media only screen and (max-width : 480px) {
+
+	.hideOnMobile{
+		display: none !important;
+	}
+	
+	h1 {
+		font-size: 2em !important;
+		text-align: center;
+	}
+	
+	.container:not(#mainTitle){
+	border-style: none;
+	}
+	
+	.floatLeftMobile{
+		width: 50%;
+		float: left;
+	}
+	
+	.sinopsis{
+		font-size: 0.65em;
+	}
+	
+	.showOnMobile{
+		display: block !important; 
+	}
+	
+	.Title{
+		font-size: 1.3em;
+	}
+	
+	section{
+		border-style: none !important;
+	}
+	
+	section:first-of-type{
+		border-bottom-style: dotted !important;
+		overflow: auto;
+	}
+	
+	.relativeOnMobile{
+		position: relative;
+	}
+	
+	.absoluteOnMobile{
+		position: absolute;
+	}
+	
+	.OtherTitle{
+		font-size: 1em !important;
+	}
+	
+	div.bloque{
+		width: 80% !important;
+	}
+	
+	em {
+		font-style: normal;
+		font-size: 0.6em;
+	}
+	
+	.negrita {
+		font-weight: bold;
+	}
+}
+
+@media only screen and (max-width : 805px) and (min-width : 481px) {
+	.hideOnTablet{
+		display: none !important;
+	}
+	
+	h1 {
+		font-size: 2em !important;
+		text-align: center;
+	}
+	.floatOnTablet{
+		width: 50%;
+		float: left;
+	}
+	
+	.sinopsis{
+		font-size: 0.55em;
+	}
+	
+	.showOnTablet{
+		display: block !important; 
+	}
+	
+	.container:not(#mainTitle){
+	border-style: none;
+	}
+	
+	em {
+		font-style: normal;
+		font-size: 0.6em;
+	}
+	
+	.negrita {
+		font-weight: bold;
+	}
+	
+	h2 {
+		font-size: 1.5em;
+		text-align: center;
+	}
+	
+	video {
+	max-width: 80%;
+	height: auto;
+}
+}

@@ -1,0 +1,174 @@
+h1#titulo-sitio {
+	font-size: 4em;
+	color:#d39a0a;
+	text-shadow: 5px 5px 5px #bc8609;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+audio {
+	max-width: 100%;
+	height: auto;
+}
+
+
+body {
+	/*Background*/
+	background-image: url('banner-ven-a-manabi.png');
+	background-color: #5FB404;
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: top left;
+	background-attachment: fixed;
+	
+}
+
+div.resumen{
+	border-style: solid;
+	border-radius: 15px;
+	padding: 0;
+}
+
+div#res-hidden{
+	display: none;
+}
+
+div.imagen-receta{
+	border-bottom: solid;
+}
+
+div.imagen-receta a {
+	 font-variant: small-caps;
+}
+
+p.categoria-text {
+	color: #d69f2a;
+}
+
+p.descripcion-short{
+	padding:2px;
+}
+
+section#recetas-resumen div.resumen{
+	display: inline-block;
+	margin-right: 5px;
+	margin-left: 5px;
+	width: 20%;
+}
+
+a:link {
+	color: #db990a;
+}
+
+a:hover {
+	color: #edc163;
+	text-decoration: none;
+}
+
+a:visited {
+	color:#7c652e;
+}
+
+div.bloque-inline{
+	display:inline-block;
+}
+
+div[name="non-image"]{
+	width:50%;
+}
+
+p.descripcion {
+	padding:5px;
+}
+
+.detalle {
+	padding-bottom: 7pt;
+	border-bottom: dotted;
+	border-width: 1px;
+	border-color:  #e0d2b1;
+}
+
+div.imagen-receta{
+	display:block;
+}
+
+
+div#gallina{
+	background-image: url('img/caldoGallina2.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+div#gallina:hover {
+	opacity: 0.7;
+}
+
+div#pescado{
+	background-image: url('img/bichePescado.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+div#pescado:hover {
+	opacity: 0.7;
+}
+
+div#verde{
+	background-image: url('img/empanadasVerde.jpg');
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: center;
+
+}
+
+div#verde:hover {
+	opacity: 0.7;
+}
+
+.showOnMobile{
+	display: none;
+}
+
+#firstCont{
+	margin-bottom: 7pt;
+}
+
+@media only screen and (max-width : 480px) {
+	.hideOnMobile{
+		display: none;
+	}
+	
+	.mobileFloatLeft{
+		width:50%;
+		float: left;
+	}
+	
+	h1 {
+		font-size: 1.7em !important;
+		text-align: center;
+	}
+	
+	.categoria-text{
+		text-align: right;
+		top: 15px;
+	}
+	
+	.showOnMobile{
+		display: block;
+	}
+	
+	.absoluteOnMobile{
+		position: absolute;
+		font-size: 1em;
+		color: #d69f2a;
+		text-align: center;
+		left: 10%;
+	}
+}
