@@ -41,6 +41,7 @@ function alertContents() {
 			console.log(x);
 			let lista = "";
 			for (let i = 0; i< x.length; i++){
+				console.log(x[i].getAttribute("titulo"));
 				lista += "<li>" + x[i].getAttribute("titulo") + "</li>"
 			}
 			document.getElementById("lista-canciones").innerHTML = lista;
