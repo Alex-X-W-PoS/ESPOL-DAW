@@ -97,7 +97,9 @@ function alertContents() {
 				enlace.setAttribute("href","#contacto");
 				enlace.innerHTML = array[i].nombre;
 				div1.appendChild(enlace);
-				enlace.onclick = myFunc;
+				enlace.onclick = function () {
+					myFunc(i);
+				};
 				elemento.appendChild(div1);
 				deudas.setAttribute("id","lista-deudas-" + i);
 				div2.appendChild(deudas);
@@ -172,7 +174,7 @@ function alertContents2(id) {
 }
 
 function myFunc (id){
-	makeRequest2(id.srcElement.getAttribute("id"),'gastos_personales.json','servicios_basicos.xml');
+	makeRequest2(id,'gastos_personales.json','servicios_basicos.xml');
 }
 
 	
